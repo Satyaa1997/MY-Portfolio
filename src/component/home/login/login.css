@@ -1,0 +1,25 @@
+.form-background{
+    background-image: url("/code.jpg");
+    background-size: cover;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.form-background{
+    width: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 450px;
+    margin-top: 100px;
+}
+.login-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
