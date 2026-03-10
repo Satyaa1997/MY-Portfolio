@@ -27,10 +27,10 @@ export default function ContactForm() {
     });
 
     if (res.ok) {
-      alert("Details sent successfully ✅");
+      alert("Details sent successfully");
       setFormData({ name: "", mobile: "", email: "", message: "" });
     } else {
-      alert("Something went wrong ❌");
+      alert("Something went wrong ");
     }
   };
 

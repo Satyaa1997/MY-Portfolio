@@ -3,7 +3,8 @@ import ContactForm from "./ContactForm";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import { Navbar, Container, NavDropdown, Nav} from "react-bootstrap";
+import { Navbar, Container, Nav} from "react-bootstrap";
+
 
 
 
@@ -118,7 +119,10 @@ export default function Portfolio() {
           <h2 className="section__title">Contact</h2>
           <p className="section__text">Email: satyamrockindia@gmail.com</p>
           <p className="section__text">Mobile No.: 8601553699</p>
-          <p className="section__text">Linkedin: </p>
+         <p className="section__text">LinkedIn: 
+              <a href="https://www.linkedin.com/in/satyam-gond-4b08b5227" target="_blank">
+                 www.linkedin.com/in/satyam-gond-4b08b5227</a>
+         </p>
         </section>
         <section className="section section--grey">
           <h2 className="section__title">Send Your Details</h2>
