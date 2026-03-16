@@ -85,8 +85,9 @@ export default function Portfolio() {
         <div className="projects">
           <div className="project-card">
             <h3 className="project-card__title">Portfolio Website</h3>
+             <a href=" https://satyaa1997.github.io/Interview1/">Open Website</a>
             <p className="project-card__text">
-              Single page portfolio built using React.
+              For sure Taxi (Online Booking Taxi)
             </p>
           </div>
 
