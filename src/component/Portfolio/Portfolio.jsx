@@ -84,7 +84,7 @@ export default function Portfolio() {
 
         <div className="projects">
           <div className="project-card">
-            <h3 className="project-card__title">Portfolio Website</h3>
+            <h3 className="project-card__title">Texi Booking Design</h3>
              <a href=" https://satyaa1997.github.io/Interview1/">Open Website</a>
             <p className="project-card__text">
               For sure Taxi (Online Booking Taxi)
