@@ -115,13 +115,13 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section style={{ display: "flex", justifyContent: "space-between" }}>
+      <section className="contact-row">
         <section className="section section--grey" id="contact">
           <h2 className="section__title">Contact</h2>
           <p className="section__text">Email: satyamrockindia@gmail.com</p>
           <p className="section__text">Mobile No.: 8601553699</p>
          <p className="section__text">LinkedIn: 
-              <a href="https://www.linkedin.com/in/satyam-gond-4b08b5227" target="_blank">
+              <a href="https://www.linkedin.com/in/satyam-gond-4b08b5227" target="_blank" rel="noreferrer">
                  www.linkedin.com/in/satyam-gond-4b08b5227</a>
          </p>
         </section>

@@ -259,6 +259,43 @@
   transition: color 0.3s ease, transform 0.3s ease;
 }
 
+/* ===== CONTACT SECTION RESPONSIVE ===== */
+.contact-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 0 10px 64px;
+  flex-wrap: wrap;
+}
+
+.contact-row > .section {
+  flex: 1 1 320px;
+  min-width: 280px;
+}
+
+@media (max-width: 992px) {
+  .contact-row {
+    flex-direction: column;
+    margin: 0 8px 40px;
+  }
+
+  .contact-row > .section {
+    width: 100%;
+    max-width: 680px;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-row {
+    margin: 0 6px 30px;
+  }
+
+  .section .section__title {
+    font-size: 20px;
+  }
+}
+
+
 .skills-card:hover .section__title {
   color: #f55e07;
   transform: translateX(6px);
