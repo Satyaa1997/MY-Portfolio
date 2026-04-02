@@ -366,3 +366,30 @@
     padding: 40px 15px;
   }
 }
+/* Links list */
+.project-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+/* Each item */
+.project-links li {
+  margin-bottom: 8px;
+}
+
+/* Link style */
+.project-links a {
+  text-decoration: none;
+  color: #0d6efd;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+/* Hover effect */
+.project-links a:hover {
+  color: #0b5ed7;
+  text-decoration: underline;
+  transform: translateX(5px);
+}

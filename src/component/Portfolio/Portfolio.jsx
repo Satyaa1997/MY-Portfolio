@@ -82,37 +82,96 @@ export default function Portfolio() {
       <section className="section" id="projects">
         <h2 className="section__title">Projects</h2>
 
-        <div className="projects">
-          <div className="project-card">
-            <h3 className="project-card__title">Texi Booking Design</h3>
-             <a href=" https://satyaa1997.github.io/Interview1/">Open Website</a>
-            <p className="project-card__text">
-              For sure Taxi (Online Booking Taxi)
-            </p>
-          </div>
+       <div className="projects">
+  <div className="project-card">
+    <h3 className="project-card__title">Taxi Booking Design</h3>
+    <p className="project-card__text">
+      Online taxi booking UI design.
+    </p>
+    <a href="https://satyaa1997.github.io/Interview1/" target="_blank" rel="noreferrer">
+      Open Website
+    </a>
+  </div>
 
-          <div className="project-card">
-            <h3 className="project-card__title">To-Do App</h3>
-            <p className="project-card__text">
-              Simple to-do application using React.
-            </p>
-          </div>
+  <div className="project-card">
+    <h3 className="project-card__title">To-Do App</h3>
+    <p className="project-card__text">
+      Simple to-do application using React.
+    </p>
+    <a href="#">View Project</a>
+  </div>
 
-          <div className="project-card">
-            <h3 className="project-card__title">Portfolio Website</h3>
-            <p className="project-card__text">
-              Single page portfolio built using React.
-            </p>
-          </div>
+  <div className="project-card">
+    <h3 className="project-card__title">Portfolio Website</h3>
+    <p className="project-card__text">
+      Single page portfolio built using React.
+    </p>
+    <a href="#">View Project</a>
+  </div>
 
-          <div className="project-card">
-            <h3 className="project-card__title">To-Do App</h3>
-            <a href="https://github.com/Satyaa1997/TO-Do-Backend-">Get Structure</a>
-            <p className="project-card__text">
-              Simple to-do application using React.
-            </p>
-          </div>
-        </div>
+  <div className="project-card">
+    <h3 className="project-card__title">Backend Structure</h3>
+    <p className="project-card__text">
+      Node + Express backend project.
+    </p>
+    <a href="https://github.com/Satyaa1997/TO-Do-Backend-" target="_blank" rel="noreferrer">
+      View Code
+    </a>
+  </div>
+</div>
+ <div className="projects">
+ <div className="project-card">
+  <h3 className="project-card__title">Taxi Booking Design</h3>
+
+  <ul className="project-links">
+    <li>
+      <a href="https://htmlexampl.netlify.app/" target="_blank" rel="noreferrer">
+        🔗 Live Website
+      </a>
+    </li>
+    <li>
+      <a href="https://bright-mousse-41a04d.netlify.app/" target="_blank" rel="noreferrer">
+         🔗 Live Webpage Apple
+      </a>
+    </li>
+    <li>
+      <a href="https://bright-mousse-41a04d.netlify.app/" target="_blank" rel="noreferrer">
+       🔗 Live Webpage Apple
+      </a>
+    </li>
+  </ul>
+
+  <p className="project-card__text">
+    Online taxi booking UI design.
+  </p>
+</div>
+
+  <div className="project-card">
+    <h3 className="project-card__title">To-Do App</h3>
+    <p className="project-card__text">
+      Simple to-do application using React.
+    </p>
+    <a href="#">View Project</a>
+  </div>
+
+  <div className="project-card">
+    <h3 className="project-card__title">Portfolio Website</h3>
+    <p className="project-card__text">
+      Single page portfolio built using React.
+    </p>
+    <a href="#">View Project</a>
+  </div>
+
+  <div className="project-card">
+    <h3 className="project-card__title">Backend Structure</h3>
+    <p className="project-card__text">
+      Node + Express backend project.
+    </p>
+    <a href="https://github.com/Satyaa1997/TO-Do-Backend-" target="_blank" rel="noreferrer">
+      View Code
+    </a>
+  </div>
+</div>
       </section>
 
       <section className="contact-row">

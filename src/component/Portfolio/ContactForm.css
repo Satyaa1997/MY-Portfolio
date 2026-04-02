@@ -56,6 +56,104 @@
 .contact-form button:active {
   transform: scale(0.98);
 }
+/* ===== PROJECT SECTION ===== */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* ===== CARD ===== */
+.project-card {
+  width: 250px;
+  height: 350px;
+  padding: 20px;
+
+  background: linear-gradient(145deg, #bef061, #89bbeb);
+  border-radius: 20px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glow overlay */
+.project-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(13,110,253,0.25),
+    transparent
+  );
+  opacity: 0;
+  transition: 0.4s;
+  pointer-events: none;
+}
+
+/* Hover effect */
+.project-card:hover {
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 30px 60px rgba(0,0,0,0.25);
+}
+
+.project-card:hover::before {
+  opacity: 1;
+}
+
+/* Title */
+.project-card__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+}
+
+/* Text */
+.project-card__text {
+  font-size: 14px;
+  color: #555;
+  margin: 15px 0;
+  flex-grow: 1;
+}
+
+/* Button */
+.project-card a {
+  text-decoration: none;
+  text-align: center;
+  background: linear-gradient(135deg, #0a2be6, #7ea514);
+  color: #fff;
+  padding: 10px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: 0.3s;
+  display: block;       
+  margin-top: 10px; 
+}
+
+/* Button hover */
+.project-card a:hover {
+  transform: scale(1.08);
+  background: linear-gradient(135deg, #0b5ed7, #1d4ed8);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .project-card {
+    width: 90%;
+    height: auto;
+  }
+}
 
 /* 📱 Mobile responsive */
 @media (max-width: 768px) {
