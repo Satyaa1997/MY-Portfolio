@@ -121,7 +121,7 @@ export default function Portfolio() {
 </div>
  <div className="projects">
  <div className="project-card">
-  <h3 className="project-card__title">Taxi Booking Design</h3>
+  <h3 className="project-card__title">Some Pages Design's</h3>
 
   <ul className="project-links">
     <li>
@@ -142,7 +142,7 @@ export default function Portfolio() {
   </ul>
 
   <p className="project-card__text">
-    Online taxi booking UI design.
+   This is a collection of some pages design's using HTML and CSS. I have designed some pages like Apple website etc.
   </p>
 </div>
 
