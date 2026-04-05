@@ -1,5 +1,5 @@
 .form-background{
-    background-image: url("/code.jpg");
+    background: linear-gradient(135deg, #1a1a1a, #262626);
     background-size: cover;
     padding: 20px;
     align-items: center;
@@ -7,7 +7,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   
+    border: 1px solid #333333;
+    border-radius: 10px;
 }
 
 .form-background{
@@ -16,10 +17,12 @@
     border-radius: 10px;
     margin-left: 450px;
     margin-top: 100px;
+    color: #ffffff;
 }
 .login-container{
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #000000;
 }

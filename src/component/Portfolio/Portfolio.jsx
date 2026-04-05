@@ -3,10 +3,7 @@ import ContactForm from "./ContactForm";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 
-import { Navbar, Container, Nav} from "react-bootstrap";
-
-
-
+import { Navbar, Container, Nav } from "react-bootstrap";
 
 export default function Portfolio() {
   return (
@@ -15,7 +12,10 @@ export default function Portfolio() {
       <Navbar expand="lg" className="custom-navbar" fixed="top">
         <Container>
           <Navbar.Brand href="#home" className="logo">
-            Satyam.dev
+            <img
+              src="https://media.tenor.com/_sRq7f0tQLEAAAAM/reactjs.gif"
+              alt=""
+            />
           </Navbar.Brand>
 
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -82,96 +82,119 @@ export default function Portfolio() {
       <section className="section" id="projects">
         <h2 className="section__title">Projects</h2>
 
-       <div className="projects">
-  <div className="project-card">
-    <h3 className="project-card__title">Taxi Booking Design</h3>
-    <p className="project-card__text">
-      Online taxi booking UI design.
-    </p>
-    <a href="https://satyaa1997.github.io/Interview1/" target="_blank" rel="noreferrer">
-      Open Website
-    </a>
-  </div>
+        <div className="projects">
+          <div className="project-card">
+            <h3 className="project-card__title">Taxi Booking Design</h3>
+            <p className="project-card__text">Online taxi booking UI design.</p>
+            <a
+              href="https://satyaa1997.github.io/Interview1/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open Website
+            </a>
+          </div>
 
-  <div className="project-card">
-    <h3 className="project-card__title">To-Do App</h3>
-    <p className="project-card__text">
-      Simple to-do application using React.
-    </p>
-    <a href="#">View Project</a>
-  </div>
+          <div className="project-card">
+            <h3 className="project-card__title">To-Do App</h3>
+            <p className="project-card__text">
+              Simple to-do application using React.
+            </p>
+            <a href="#">View Project</a>
+          </div>
 
-  <div className="project-card">
-    <h3 className="project-card__title">Portfolio Website</h3>
-    <p className="project-card__text">
-      Single page portfolio built using React.
-    </p>
-    <a href="#">View Project</a>
-  </div>
+          <div className="project-card">
+            <h3 className="project-card__title">Portfolio Website</h3>
+            <p className="project-card__text">
+              Single page portfolio built using React.
+            </p>
+            <a href="#">View Project</a>
+          </div>
 
-  <div className="project-card">
-    <h3 className="project-card__title">Backend Structure</h3>
-    <p className="project-card__text">
-      Node + Express backend project.
-    </p>
-    <a href="https://github.com/Satyaa1997/TO-Do-Backend-" target="_blank" rel="noreferrer">
-      View Code
-    </a>
-  </div>
-</div>
- <div className="projects">
- <div className="project-card">
-  <h3 className="project-card__title">Some Pages Design's</h3>
+          <div className="project-card">
+            <h3 className="project-card__title">Backend Structure</h3>
+            <p className="project-card__text">
+              Node + Express backend project.
+            </p>
+            <a
+              href="https://github.com/Satyaa1997/TO-Do-Backend-"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Code
+            </a>
+          </div>
+        </div>
+        <div className="projects">
+          <div className="project-card">
+            <h3 className="project-card__title">Some Pages Design's</h3>
 
-  <ul className="project-links">
-    <li>
-      <a href="https://htmlexampl.netlify.app/" target="_blank" rel="noreferrer">
-        🔗 Live Website
-      </a>
-    </li>
-    <li>
-      <a href="https://bright-mousse-41a04d.netlify.app/" target="_blank" rel="noreferrer">
-         🔗 Live Webpage Apple
-      </a>
-    </li>
-    <li>
-      <a href="https://bright-mousse-41a04d.netlify.app/" target="_blank" rel="noreferrer">
-       🔗 Live Webpage Apple
-      </a>
-    </li>
-  </ul>
+            <ul className="project-links">
+              <li>
+                <a
+                  href="https://htmlexampl.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  🔗 Live Website
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://bright-mousse-41a04d.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  🔗 Live Webpage Apple
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://bright-mousse-41a04d.netlify.app/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  🔗 Live Webpage Apple
+                </a>
+              </li>
+            </ul>
 
-  <p className="project-card__text">
-   This is a collection of some pages design's using HTML and CSS. I have designed some pages like Apple website etc.
-  </p>
-</div>
+            <p className="project-card__text">
+              This is a collection of some pages design's using HTML and CSS. I
+              have designed some pages like Apple website etc.
+            </p>
+          </div>
 
-  <div className="project-card">
-    <h3 className="project-card__title">To-Do App</h3>
-    <p className="project-card__text">
-      Simple to-do application using React.
-    </p>
-    <a href="#">View Project</a>
-  </div>
+          <div className="project-card">
+            <h3 className="project-card__title">To-Do App</h3>
+            <p className="project-card__text">
+              Simple to-do application using React.
+            </p>
+            <a href="#">View Project</a>
+          </div>
 
-  <div className="project-card">
-    <h3 className="project-card__title">Portfolio Website</h3>
-    <p className="project-card__text">
-      Single page portfolio built using React.
-    </p>
-    <a href="#">View Project</a>
-  </div>
+          <div className="project-card">
+            <h3 className="project-card__title">Portfolio Website</h3>
+            <p className="project-card__text">
+              Single page portfolio built using React.
+            </p>
+            <a href="#">View Project</a>
+          </div>
 
-  <div className="project-card">
-    <h3 className="project-card__title">Backend Structure</h3>
-    <p className="project-card__text">
-      Node + Express backend project.
-    </p>
-    <a href="https://github.com/Satyaa1997/TO-Do-Backend-" target="_blank" rel="noreferrer">
-      View Code
-    </a>
-  </div>
-</div>
+          <div className="project-card">
+            <h3 className="project-card__title">Backend Structure</h3>
+            <p className="project-card__text">
+              Node + Express backend project.
+            </p>
+            <a
+              href="https://github.com/Satyaa1997/TO-Do-Backend-"
+              target="_blank"
+              rel="noreferrer"
+            >
+              View Code
+            </a>
+          </div>
+        </div>
       </section>
 
       <section className="contact-row">
@@ -179,10 +202,16 @@ export default function Portfolio() {
           <h2 className="section__title">Contact</h2>
           <p className="section__text">Email: satyamrockindia@gmail.com</p>
           <p className="section__text">Mobile No.: 8601553699</p>
-         <p className="section__text">LinkedIn: 
-              <a href="https://www.linkedin.com/in/satyam-gond-4b08b5227" target="_blank" rel="noreferrer">
-                 www.linkedin.com/in/satyam-gond-4b08b5227</a>
-         </p>
+          <p className="section__text">
+            LinkedIn:
+            <a
+              href="https://www.linkedin.com/in/satyam-gond-4b08b5227"
+              target="_blank"
+              rel="noreferrer"
+            >
+              www.linkedin.com/in/satyam-gond-4b08b5227
+            </a>
+          </p>
         </section>
         <section className="section section--grey">
           <h2 className="section__title">Send Your Details</h2>

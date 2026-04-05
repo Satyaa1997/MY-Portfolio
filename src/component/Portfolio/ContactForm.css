@@ -3,13 +3,14 @@
   max-width: 480px;
   margin: 0 auto;
   box-sizing: border-box;
-  background: #ffffff;
+  background: #1a1a1a;
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   gap: 15px;
+  border: 1px solid #333333;
 }
 
 /* Input & textarea */
@@ -18,10 +19,12 @@
   width: 100%;
   padding: 12px 14px;
   font-size: 15px;
-  border: 1px solid #ddd;
+  border: 1px solid #333333;
   border-radius: 8px;
   outline: none;
   transition: all 0.3s ease;
+  background: #262626;
+  color: #ffffff;
 }
 
 .contact-form textarea {
