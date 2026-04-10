@@ -141,7 +141,7 @@ export default function Portfolio() {
               </li>
               <li>
                 <a
-                  href="https://restro-lyart-xi.vercel.app/"
+                  href="https://bright-mousse-41a04d.netlify.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -168,9 +168,9 @@ export default function Portfolio() {
           <div className="project-card">
             <h3 className="project-card__title">To-Do App</h3>
             <p className="project-card__text">
-              Simple to-do application using React.
+              Urban Spoon (Restaurant Booking)
             </p>
-            <a href="#">View Project</a>
+            <a href="https://restro-lyart-xi.vercel.app/">View Project</a>
           </div>
 
           <div className="project-card">
