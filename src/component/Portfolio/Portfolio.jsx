@@ -166,7 +166,7 @@ export default function Portfolio() {
           </div>
 
           <div className="project-card">
-            <h3 className="project-card__title">To-Do App</h3>
+            <h3 className="project-card__title">Restro Booking App</h3>
             <p className="project-card__text">
               Urban Spoon (Restaurant Booking)
             </p>
