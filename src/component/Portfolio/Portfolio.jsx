@@ -141,7 +141,7 @@ export default function Portfolio() {
               </li>
               <li>
                 <a
-                  href="https://bright-mousse-41a04d.netlify.app/"
+                  href="https://restro-lyart-xi.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
