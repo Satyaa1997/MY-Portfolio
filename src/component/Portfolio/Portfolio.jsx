@@ -104,12 +104,12 @@ export default function Portfolio() {
           </div>
 
           <div className="project-card">
-            <h3 className="project-card__title">To-Do App</h3>
+            <h3 className="project-card__title">Book library Project</h3>
             <p className="project-card__text">
-             Book Library (MVC)
+              Book library Project(MVC structure)
             </p>
             <a href="https://github.com/Satyaa1997/BookLibrary-MVC-.git">
-             View Project</a>
+            View Project</a>
           </div>
 
           <div className="project-card">
