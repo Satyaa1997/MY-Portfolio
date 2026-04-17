@@ -93,6 +93,13 @@ export default function Portfolio() {
             >
               Open Website
             </a>
+             <a
+              href="stupendous-faloodeh-3eef42.netlify.app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open Website
+            </a>
           </div>
 
           <div className="project-card">
