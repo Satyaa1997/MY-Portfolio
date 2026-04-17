@@ -93,6 +93,7 @@ export default function Portfolio() {
             >
               Open Website
             </a>
+             <p className="project-card__text">PhotoShoot WebPage</p>
              <a
               href="https://stupendous-faloodeh-3eef42.netlify.app/"
               target="_blank"
