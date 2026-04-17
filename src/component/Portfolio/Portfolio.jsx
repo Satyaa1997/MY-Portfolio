@@ -106,9 +106,10 @@ export default function Portfolio() {
           <div className="project-card">
             <h3 className="project-card__title">To-Do App</h3>
             <p className="project-card__text">
-              Simple to-do application using React.
+             Book Library (MVC)
             </p>
-            <a href="#">View Project</a>
+            <a href="https://github.com/Satyaa1997/BookLibrary-MVC-.git">
+             View Project</a>
           </div>
 
           <div className="project-card">
