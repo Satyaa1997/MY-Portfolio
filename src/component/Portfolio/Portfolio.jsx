@@ -113,11 +113,11 @@ export default function Portfolio() {
           </div>
 
           <div className="project-card">
-            <h3 className="project-card__title">Portfolio Website</h3>
+            <h3 className="project-card__title">Instagram Reels </h3>
             <p className="project-card__text">
-              Single page portfolio built using React.
+             Instagram Reels UI design using HTML,CSS and JavaScript.
             </p>
-            <a href="#">View Project</a>
+            <a href="https://dom-project-exze.vercel.app/">View Project</a>
           </div>
 
           <div className="project-card">
