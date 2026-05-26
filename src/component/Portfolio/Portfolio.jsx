@@ -130,7 +130,7 @@ export default function Portfolio() {
               target="_blank"
               rel="noreferrer"
             >
-              View Code
+              View Profile
             </a>
           </div>
         </div>
