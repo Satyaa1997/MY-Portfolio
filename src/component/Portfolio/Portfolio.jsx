@@ -121,12 +121,12 @@ export default function Portfolio() {
           </div>
 
           <div className="project-card">
-            <h3 className="project-card__title">Backend Structure</h3>
+            <h3 className="project-card__title">Instagram Profile </h3>
             <p className="project-card__text">
-              Node + Express backend project.
+             Instagram Profile Page UI design using HTML,CSS and JavaScript.
             </p>
             <a
-              href="https://github.com/Satyaa1997/TO-Do-Backend-"
+              href="https://dulcet-cocada-955eb5.netlify.app/"
               target="_blank"
               rel="noreferrer"
             >
