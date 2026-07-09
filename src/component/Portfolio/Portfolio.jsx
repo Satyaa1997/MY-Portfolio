@@ -1,11 +1,68 @@
 import "./Portfolio.css";
+import { useEffect, useRef } from "react";
 import ContactForm from "./ContactForm";
-
 import "bootstrap/dist/css/bootstrap.min.css";
-
 import { Navbar, Container, Nav } from "react-bootstrap";
 
 export default function Portfolio() {
+  const headingRef = useRef(null);
+  const paraRef = useRef(null);
+
+  const animateText = (ref, text, isHeading = false) => {
+    const element = ref.current;
+
+    if (!element) return;
+
+    const characters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+
+    let iteration = 0;
+
+    const interval = setInterval(() => {
+      const randomText = text
+        .split("")
+        .map((char, index) => {
+          if (char === " ") return " ";
+
+          if (index < iteration) return char;
+
+          return characters[Math.floor(Math.random() * characters.length)];
+        })
+        .join("");
+
+      if (isHeading) {
+        const name = "Satyam Gond";
+        const display = randomText.replace(
+          name,
+          `<span style="color:#0d6efd">${randomText.slice(
+            randomText.indexOf(name),
+            randomText.indexOf(name) + name.length,
+          )}</span>`,
+        );
+
+        element.innerHTML = display;
+      } else {
+        element.innerText = randomText;
+      }
+
+      iteration += 0.3;
+
+      if (iteration >= text.length) {
+        clearInterval(interval);
+
+        if (isHeading) {
+          element.innerHTML = `Hi, I'm <span style="color:#0d6efd">Satyam Gond</span>`;
+        } else {
+          element.innerText = text;
+        }
+      }
+    }, 30);
+  };
+
+  useEffect(() => {
+    animateText(headingRef, "Hi, I'm Satyam Gond", true);
+    animateText(paraRef, "Frontend Developer | React Developer");
+  }, []);
+
   return (
     <div className="portfolio">
       {/* ===== NAVBAR ===== */}
@@ -37,10 +94,23 @@ export default function Portfolio() {
           <div className="hero-content">
             {/* LEFT CONTENT */}
             <div className="hero-text">
-              <h1>
-                Hi, I’m <span>Satyam Gond</span>
+              <h1
+                ref={headingRef}
+                onMouseEnter={() =>
+                  animateText(headingRef, "Hi, I'm Satyam Gond", true)
+                }
+              >
+                Hi, I'm <span>Satyam Gond</span>
               </h1>
-              <p>Frontend Developer | React Developer</p>
+
+              <p
+                ref={paraRef}
+                onMouseEnter={() =>
+                  animateText(paraRef, "Frontend Developer | React Developer")
+                }
+              >
+                Frontend Developer | React Developer
+              </p>
 
               <a href="#contact" className="hero-btn">
                 Hire Me
@@ -93,8 +163,8 @@ export default function Portfolio() {
             >
               Open Website
             </a>
-             <p className="project-card__text">PhotoShoot WebPage</p>
-             <a
+            <p className="project-card__text">PhotoShoot WebPage</p>
+            <a
               href="https://stupendous-faloodeh-3eef42.netlify.app/"
               target="_blank"
               rel="noreferrer"
@@ -109,7 +179,8 @@ export default function Portfolio() {
               Book library Project(MVC structure)
             </p>
             <a href="https://github.com/Satyaa1997/BookLibrary-MVC-.git">
-            View Project</a>
+              View Project
+            </a>
           </div>
 
           <div className="project-card">
@@ -118,6 +189,16 @@ export default function Portfolio() {
              Instagram Reels UI design using HTML,CSS and JavaScript.
             </p>
             <a href="https://dom-project-exze.vercel.app/">View Project</a>
+            <a href="#">View Project</a>
+            <li>
+              <a
+                href="https://bright-mousse-41a04d.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                🔗 Live Webpage Apple
+              </a>
+            </li>
           </div>
 
           <div className="project-card">
@@ -136,78 +217,17 @@ export default function Portfolio() {
         </div>
         <div className="projects">
           <div className="project-card">
-            <h3 className="project-card__title">Some Pages Design's</h3>
-
-            <ul className="project-links">
-              <li>
-                <a
-                  href="https://htmlexampl.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  🔗 Live Website
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://bright-mousse-41a04d.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  🔗 Live Webpage Apple
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://bright-mousse-41a04d.netlify.app/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  🔗 Live Webpage Apple
-                </a>
-              </li>
-            </ul>
-
-            <p className="project-card__text">
-              This is a collection of some pages design's using HTML and CSS. I
-              have designed some pages like Apple website etc.
-            </p>
-          </div>
-
-          <div className="project-card">
             <h3 className="project-card__title">Restro Booking App</h3>
             <p className="project-card__text">
               Urban Spoon (Restaurant Booking)
             </p>
             <a href="https://restro-lyart-xi.vercel.app/">View Project</a>
           </div>
-
-          <div className="project-card">
-            <h3 className="project-card__title">Portfolio Website</h3>
-            <p className="project-card__text">
-              Single page portfolio built using React.
-            </p>
-            <a href="#">View Project</a>
-          </div>
-
-          <div className="project-card">
-            <h3 className="project-card__title">Backend Structure</h3>
-            <p className="project-card__text">
-              Node + Express backend project.
-            </p>
-            <a
-              href="https://github.com/Satyaa1997/TO-Do-Backend-"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View Code
-            </a>
-          </div>
         </div>
       </section>
 
       <section className="contact-row">
-        <section className="section section--grey" id="contact">
+        <section className="section section--grey " id="contact">
           <h2 className="section__title">Contact</h2>
           <p className="section__text">Email: satyamrockindia@gmail.com</p>
           <p className="section__text">Mobile No.: 8601553699</p>
@@ -222,7 +242,7 @@ export default function Portfolio() {
             </a>
           </p>
         </section>
-        <section className="section section--grey">
+        <section className="section section--grey contact-form-section">
           <h2 className="section__title">Send Your Details</h2>
           <ContactForm />
         </section>
