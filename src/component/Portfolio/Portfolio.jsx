@@ -153,7 +153,7 @@ export default function Portfolio() {
         <h2 className="section__title">Projects</h2>
 
         <div className="projects">
-          <div className="project-card">
+          <div className="project-card large-card">
             <h3 className="project-card__title">Taxi Booking Design</h3>
             <p className="project-card__text">Online taxi booking UI design.</p>
             <a
@@ -173,7 +173,7 @@ export default function Portfolio() {
             </a>
           </div>
 
-          <div className="project-card">
+          <div className="project-card large-card">
             <h3 className="project-card__title">Book library Project</h3>
             <p className="project-card__text">
               Book library Project(MVC structure)
@@ -183,7 +183,7 @@ export default function Portfolio() {
             </a>
           </div>
 
-          <div className="project-card">
+          <div className="project-card large-card">
             <h3 className="project-card__title">Instagram Reels </h3>
             <p className="project-card__text">
              Instagram Reels UI design using HTML,CSS and JavaScript.
@@ -201,7 +201,7 @@ export default function Portfolio() {
             </li>
           </div>
 
-          <div className="project-card">
+          <div className="project-card large-card">
             <h3 className="project-card__title">Instagram Profile </h3>
             <p className="project-card__text">
              Instagram Profile Page UI design using HTML,CSS and JavaScript.
@@ -216,7 +216,7 @@ export default function Portfolio() {
           </div>
         </div>
         <div className="projects">
-          <div className="project-card">
+          <div className="project-card large-card">
             <h3 className="project-card__title">Restro Booking App</h3>
             <p className="project-card__text">
               Urban Spoon (Restaurant Booking)
