@@ -159,21 +159,21 @@ export default function Portfolio() {
     <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
 
       {/* Taxi Booking */}
-      <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-4 transition-all duration-300 p-8 flex flex-col">
+      <div className="bg-white rounded-3xl shadow-lg hover:shadow-2xl hover:-translate-y-4 transition-all  duration-300 px-8 flex flex-col">
 
         <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-3xl text-white mb-5">
           🚕
         </div>
 
-        <h3 className="text-2xl font-bold text-black">
+        <h3 className="text-2xl ml-5 font-bold text-black">
           Taxi Booking Design
         </h3>
 
-        <span className="inline-block mt-3 w-fit bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-full">
+        <span className="inline-block mt-3 ml-5 w-fit bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-full">
           HTML • CSS • Bootstrap
         </span>
 
-        <p className="text-gray-600 mt-4 leading-7 flex-grow">
+        <p className="text-gray-600 mt-4 leading-7 p-8 ">
           Responsive online taxi booking landing page with modern UI and clean
           responsive layout.
         </p>
