@@ -149,82 +149,263 @@ export default function Portfolio() {
         </div>
       </section>
 
-      <section className="section" id="projects">
-        <h2 className="section__title">Projects</h2>
+   <section id="projects" className="bg-slate-100 py-20 px-6">
+  <div className="max-w-7xl mx-auto">
 
-        <div className="projects">
-          <div className="project-card large-card">
-            <h3 className="project-card__title">Taxi Booking Design</h3>
-            <p className="project-card__text">Online taxi booking UI design.</p>
-            <a
-              href="https://satyaa1997.github.io/Interview1/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Open Website
-            </a>
-            <p className="project-card__text">PhotoShoot WebPage</p>
-            <a
-              href="https://stupendous-faloodeh-3eef42.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Open Website
-            </a>
-          </div>
+    <h2 className="text-4xl md:text-5xl font-bold text-center text-black mb-14">
+      My Projects
+    </h2>
 
-          <div className="project-card large-card">
-            <h3 className="project-card__title">Book library Project</h3>
-            <p className="project-card__text">
-              Book library Project(MVC structure)
-            </p>
-            <a href="https://github.com/Satyaa1997/BookLibrary-MVC-.git">
-              View Project
-            </a>
-          </div>
+    <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
 
-          <div className="project-card large-card">
-            <h3 className="project-card__title">Instagram Reels </h3>
-            <p className="project-card__text">
-             Instagram Reels UI design using HTML,CSS and JavaScript.
-            </p>
-            <a href="https://dom-project-exze.vercel.app/">View Project</a>
-            <a href="#">View Project</a>
-            <li>
-              <a
-                href="https://bright-mousse-41a04d.netlify.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                🔗 Live Webpage Apple
-              </a>
-            </li>
-          </div>
+      {/* Taxi Booking */}
+      <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-4 transition-all duration-300 p-8 flex flex-col">
 
-          <div className="project-card large-card">
-            <h3 className="project-card__title">Instagram Profile </h3>
-            <p className="project-card__text">
-             Instagram Profile Page UI design using HTML,CSS and JavaScript.
-            </p>
-            <a
-              href="https://dulcet-cocada-955eb5.netlify.app/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              View Profile
-            </a>
-          </div>
+        <div className="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center text-3xl text-white mb-5">
+          🚕
         </div>
-        <div className="projects">
-          <div className="project-card large-card">
-            <h3 className="project-card__title">Restro Booking App</h3>
-            <p className="project-card__text">
-              Urban Spoon (Restaurant Booking)
-            </p>
-            <a href="https://restro-lyart-xi.vercel.app/">View Project</a>
-          </div>
+
+        <h3 className="text-2xl font-bold text-black">
+          Taxi Booking Design
+        </h3>
+
+        <span className="inline-block mt-3 w-fit bg-blue-100 text-blue-700 text-sm font-semibold px-4 py-2 rounded-full">
+          HTML • CSS • Bootstrap
+        </span>
+
+        <p className="text-gray-600 mt-4 leading-7 flex-grow">
+          Responsive online taxi booking landing page with modern UI and clean
+          responsive layout.
+        </p>
+
+        <div className="flex flex-wrap gap-3 mt-6">
+          <a
+            href="https://satyaa1997.github.io/Interview1/"
+            target="_blank"
+            rel="noreferrer"
+            className="bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-medium transition"
+          >
+            🌐 Live Demo
+          </a>
+
+          <a
+            href="https://github.com/Satyaa1997/Interview1"
+            target="_blank"
+            rel="noreferrer"
+            className="bg-blue-600 hover:bg-black text-white px-5 py-2 rounded-lg font-medium transition"
+          >
+            💻 Source Code
+          </a>
         </div>
-      </section>
+
+      </div>
+
+      {/* Book Library */}
+      <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-4 transition-all duration-300 p-8 flex flex-col">
+
+        <div className="w-16 h-16 bg-green-600 rounded-full flex items-center justify-center text-3xl text-white mb-5">
+          📚
+        </div>
+
+        <h3 className="text-2xl font-bold text-black">
+          Book Library MVC
+        </h3>
+
+        <span className="inline-block mt-3 w-fit bg-green-100 text-green-700 text-sm font-semibold px-4 py-2 rounded-full">
+          Node • Express • MongoDB
+        </span>
+
+        <p className="text-gray-600 mt-4 leading-7 flex-grow">
+          Full Stack Book Library application using MVC architecture with CRUD
+          operations.
+        </p>
+
+        <div className="mt-6">
+          <a
+            href="https://github.com/Satyaa1997/BookLibrary-MVC-.git"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block bg-blue-600 hover:bg-black text-white px-5 py-2 rounded-lg font-medium transition"
+          >
+            💻 Source Code
+          </a>
+        </div>
+
+      </div>
+
+      {/* Instagram Reels */}
+      <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-4 transition-all duration-300 p-8 flex flex-col">
+
+        <div className="w-16 h-16 bg-pink-600 rounded-full flex items-center justify-center text-3xl text-white mb-5">
+          🎬
+        </div>
+
+        <h3 className="text-2xl font-bold text-black">
+          Instagram Reels UI
+        </h3>
+
+        <span className="inline-block mt-3 w-fit bg-pink-100 text-pink-700 text-sm font-semibold px-4 py-2 rounded-full">
+          HTML • CSS • JavaScript
+        </span>
+
+        <p className="text-gray-600 mt-4 leading-7 flex-grow">
+          Instagram Reels UI clone with animations and responsive design.
+        </p>
+
+        <div className="mt-6">
+          <a
+            href="https://dom-project-exze.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-medium transition"
+          >
+            🌐 Live Demo
+          </a>
+        </div>
+
+      </div>
+
+      {/* Instagram Profile */}
+      <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-4 transition-all duration-300 p-8 flex flex-col">
+
+        <div className="w-16 h-16 bg-purple-600 rounded-full flex items-center justify-center text-3xl text-white mb-5">
+          📸
+        </div>
+
+        <h3 className="text-2xl font-bold text-black">
+          Instagram Profile UI
+        </h3>
+
+        <span className="inline-block mt-3 w-fit bg-purple-100 text-purple-700 text-sm font-semibold px-4 py-2 rounded-full">
+          HTML • CSS • JavaScript
+        </span>
+
+        <p className="text-gray-600 mt-4 leading-7 flex-grow">
+          Responsive Instagram Profile UI with a clean modern interface.
+        </p>
+
+        <div className="mt-6">
+          <a
+            href="https://dulcet-cocada-955eb5.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-medium transition"
+          >
+            🌐 Live Demo
+          </a>
+        </div>
+
+      </div>
+
+      {/* Apple Clone */}
+      <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-4 transition-all duration-300 p-8 flex flex-col">
+
+        <div className="w-16 h-16 bg-gray-800 rounded-full flex items-center justify-center text-3xl text-white mb-5">
+          🍎
+        </div>
+
+        <h3 className="text-2xl font-bold text-black">
+          Apple Website Clone
+        </h3>
+
+        <span className="inline-block mt-3 w-fit bg-gray-200 text-gray-700 text-sm font-semibold px-4 py-2 rounded-full">
+          HTML • CSS • JavaScript
+        </span>
+
+        <p className="text-gray-600 mt-4 leading-7 flex-grow">
+          Apple landing page clone with responsive layout and smooth UI.
+        </p>
+
+        <div className="mt-6">
+          <a
+            href="https://bright-mousse-41a04d.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-medium transition"
+          >
+            🌐 Live Demo
+          </a>
+        </div>
+
+      </div>
+
+      {/* Urban Spoon */}
+      <div className="bg-white rounded-2xl shadow-lg hover:shadow-2xl hover:-translate-y-4 transition-all duration-300 p-8 flex flex-col">
+
+        <div className="w-18 h-16 bg-orange-600 rounded-full flex items-center justify-center text-3xl text-white mb-5">
+          🍽️
+        </div>
+
+        <h3 className="text-2xl font-bold text-black">
+          Urban Spoon
+        </h3>
+
+        <span className="inline-block mt-3 w-fit bg-orange-100 text-orange-700 text-sm font-semibold px-4 py-2 rounded-full">
+          React • Node • Express • MongoDB
+        </span>
+
+        <p className="text-gray-600 mt-4 leading-7 flex-grow">
+          Restaurant Booking Application with authentication and booking
+          system.
+        </p>
+
+        <div className="mt-6">
+          <a
+            href="https://restro-lyart-xi.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+            className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-5 py-2 rounded-lg font-medium transition"
+          >
+            🌐 Live Demo
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+      <section className="section experience-section" id="experience">
+  <h2 className="section__title">Experience & Certifications</h2>
+
+  <div className="experience-grid">
+
+    <div className="experience-card internship-card">
+      <div className="card-icon">💼</div>
+
+      <h3>Frontend Developer Intern</h3>
+
+      <h5>CodeEnCaps</h5>
+
+      <span className="duration">
+        6 Months Internship
+      </span>
+
+      <p>
+        Worked on HTML, CSS, Bootstrap, JavaScript, ReactJS,
+        REST API, Node.js, Express.js and MongoDB.
+        Developed responsive web applications and improved
+        frontend development skills.
+      </p>
+    </div>
+
+    <div className="experience-card certificate-card">
+      <div className="card-icon">🏆</div>
+      <h3>Frontend Development Intern</h3>
+      <h5>Decodelabs</h5>
+      <span className="duration">
+        React Development
+      </span>
+      <p>
+        Successfully completed Frontend Development training
+        covering HTML, CSS, JavaScript, ReactJS and modern
+        web development concepts.
+      </p>
+    </div>
+
+  </div>
+</section>
 
       <section className="contact-row">
         <section className="section section--grey " id="contact">
